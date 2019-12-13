@@ -59,7 +59,7 @@ public class PayItemAdapter extends BaseAdapter {
             itemHolder = (ItemSuporteList) view.getTag();
         }
         final Contact item = itens.get(position);
-        itemHolder.txtNome.setText(Utilities.recortarNome(32, item.getNome().toUpperCase()));
+        itemHolder.txtNome.setText(Utilities.recortarNome(32, item.getNome()));
         itemHolder.txtTelefone.setText(Utilities.formatarTelefone(item.getTelefone()));
 
         view.setOnClickListener(new View.OnClickListener() {

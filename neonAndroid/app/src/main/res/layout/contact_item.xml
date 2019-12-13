@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="5sp"
-    android:weightSum="1"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
     android:gravity="center_vertical">
 
     <ImageButton
@@ -14,48 +14,39 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="10dp"
         android:adjustViewBounds="true"
         android:background="@drawable/foto_list_neon"
-        android:padding="2dp"
         android:scaleType="centerInside"
-        android:src="@drawable/android_contact" />
+        android:src="@drawable/android_contact"
+        android:layout_marginRight="10dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="5sp"
-        android:weightSum="1"
         android:gravity="center_vertical">
 
         <com.andrecotrim.neonmobile.components.NeonCatamaramBoldTextView
             android:id="@+id/nome"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:textColor="@color/colorPrimary"
             android:text="Nome"
-            android:textAllCaps="true"
+            android:textSize="16dp"
             android:layout_weight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginTop="4dp"
             android:textStyle="bold" />
 
-        <com.andrecotrim.neonmobile.components.NeonCatamaramRegularTextView
+        <com.andrecotrim.neonmobile.components.NeonRobotoNormalTextView
             android:id="@+id/telefone"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
             android:text="Nome"
-            android:textAllCaps="true"
+            android:textSize="14dp"
             android:layout_weight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="4dp"
             android:textStyle="bold" />
 
 

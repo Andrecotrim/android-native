@@ -41,48 +41,61 @@
             android:gravity="center">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:layout_weight="1">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     app:srcCompat="@drawable/android_contact" />
 
                 <TextView
-                    android:id="@+id/totalServicoId"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/nome"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="TOTAL SERVIÇO2"
+                    android:gravity="center"
+                    android:text="Nome Completp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+                <TextView
+                    android:id="@+id/telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:text="(43)9999-9999"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
 
+
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TOTAL SERVIÇO"
+                    android:text="Valor a enviar:"
+                    android:gravity="center"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
                     android:layout_gravity="left" />
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/moneyId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:ems="10"
                     android:inputType="numberDecimal" />
 
                 <Button
                     android:id="@+id/sendMoneyId"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Receber \n(R$0,00)"
-                    android:paddingRight="8dp"
-                    android:paddingLeft="12dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginRight="4dp" />
+                    android:layout_width="200dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/button_neon"
+                    android:gravity="center"
+                    android:text="Enviar dinheiro"
+                    android:textColor="@color/cardview_light_background"/>
             </LinearLayout>
 
 

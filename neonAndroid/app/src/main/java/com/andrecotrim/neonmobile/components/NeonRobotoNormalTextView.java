@@ -10,6 +10,6 @@ import android.widget.TextView;
 public class NeonRobotoNormalTextView extends TextView {
     public NeonRobotoNormalTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.setTypeface(Typeface.createFromAsset(context.getAssets(), "font/Roboto-Normal.ttf"));
+        this.setTypeface(Typeface.createFromAsset(context.getAssets(), "font/Roboto-Regular.ttf"));
     }
 }

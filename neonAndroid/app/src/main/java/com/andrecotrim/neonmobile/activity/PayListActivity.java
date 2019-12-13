@@ -25,7 +25,7 @@ public class PayListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pay_list);
 
         TextView toobarTitle = (TextView) findViewById(R.id.toobarTitle);
-        toobarTitle.setText("Histórico de Pagamentos");
+        toobarTitle.setText("HISTÓRICO DE PAGAMENTOS");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -58,7 +58,7 @@ public class PayListActivity extends AppCompatActivity {
         List<Contact> contacts = new ArrayList<Contact>();
 
         for (int i = 0; i < 10; i++) {
-            Contact contact = new Contact(i, "Nome 1", "43999999999");
+            Contact contact = new Contact(i, "Nome do Recebedor " + i, "43999999999");
             contacts.add(contact);
         }
 
